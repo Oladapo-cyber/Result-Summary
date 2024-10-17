@@ -1,29 +1,222 @@
-/* .circle {
-  background-color: aqua;
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
- */
-
 body {
   background-color: rgb(219, 219, 219);
+  border: 3px solid #bd9f9f;
+  /* font-family: 'Lato', sans-serif; */
+  font-family: "Inter", sans-serif;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25rem;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  gap: 0;
+  /* The height isn't having any effect here maybe cos I added 100vh to the main tag */
+  /* height: 100px; */
+  width: 600px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .left {
-  background-color: hsl(241, 81%, 54%);
-  background-color: hsl(252, 100%, 67%);
-  border-radius: 20px;
   flex: 1;
+  background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.right {
-  flex: 1;
+#result {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(196, 196, 196);
 }
+
+.score {
+  font-size: 2rem;
+  border: #ccc solid;
+  border-radius: 50%;
+  font-weight: bolder;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  /* 
+  font-size: 1.5rem;
+  border: #ccc solid;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: ;
+  width: 150px;
+  justify-content: center;
+  text-align: center; */
+}
+
+.leftbold {
+  color: aliceblue;
+}
+
+.leftbase {
+  color: #b0b0b0;
+  font-size: large;
+}
+
+.leftText {
+  align-items: center;
+  justify-content: baseline;
+  text-align: center;
+  color: rgb(227, 224, 224);
+
+  /* align-items: center; */
+}
+
+.left h3 {
+  font-size: 2rem;
+}
+
+.right-container {
+  flex: 1;
+  background-color: rgb(252, 247, 241);
+  margin: 0;
+  border-radius: 20px;
+  align-items: center;
+  padding: 15px;
+  padding-top: 0;
+  /* Added a box shadow to the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* .scores {
+  display: flex;
+}
+ */
+.samplediv {
+  display: flex;
+  border-radius: 15px;
+  margin: 15px;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* 
+  background-color: aliceblue;
+  
+
+  padding-top: 0;
+  padding-bottom: 0; */
+}
+/* Beginning of the faint background color for the summary */
+.redsumm {
+  background-color: rgb(247, 208, 208);
+}
+
+.goldsumm {
+  background-color: rgb(245, 229, 153);
+}
+
+.greensumm {
+  background-color: rgb(201, 252, 201);
+}
+
+.bluesumm {
+  background-color: rgb(199, 199, 255);
+}
+
+/* End*/
+
+/* Start of the font in the summary section */
+.redfont {
+  font-weight: bolder;
+  color: rgb(245, 67, 67);
+}
+
+.goldfont {
+  font-weight: bolder;
+  color: rgb(176, 150, 4);
+}
+
+.greenfont {
+  font-weight: bolder;
+  color: green;
+}
+
+.bluefont {
+  font-weight: bolder;
+  color: blue;
+}
+/* End */
+
+/* The bolder number from the summary score numbers */
+.boldnum {
+  font-weight: bolder;
+}
+
+/* The lighter number from the summary score numbers */
+.lightnum {
+  color: #828080;
+}
+
+.samplesvg {
+  display: flex;
+  align-items: center;
+}
+
+.scright {
+  display: flex;
+}
+
+.headerRight {
+  text-align: left;
+}
+
+.rightbtn {
+  color: white;
+  background-color: rgb(60, 60, 222);
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid #bd9f9f;
+  align-items: center;
+  width: 100%;
+}
+
+.rightbtn:hover {
+  background-color: rgb(55, 55, 133);
+  transition: 300ms linear;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+/* .right {
+  flex-direction: row;
+} */
+
+/* .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* 
+.scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: ;
+  width: 100%;
+}
+
+.reaction {
+  background-color: rgb(255, 224, 224);
+}
+
+.rightBtn {
+  padding: 10px;
+  border-radius: 15px;
+}
+ */
